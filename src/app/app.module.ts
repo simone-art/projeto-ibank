@@ -7,6 +7,7 @@ import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 import { ContainerBemvindosComponent } from './container-bemvindos/container-bemvindos.component';
 import { ContainerBeneficiosComponent } from './container-beneficios/container-beneficios.component';
 import { ContaninerBeneficiosDosComponent } from './contaniner-beneficios-dos/contaniner-beneficios-dos.component';
+import { ContainerBeneficiosTresComponent } from './container-beneficios-tres/container-beneficios-tres.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ContaninerBeneficiosDosComponent } from './contaniner-beneficios-dos/co
     CabecalhoComponent,
     ContainerBemvindosComponent,
     ContainerBeneficiosComponent,
-    ContaninerBeneficiosDosComponent
+    ContaninerBeneficiosDosComponent,
+    ContainerBeneficiosTresComponent
   ],
   imports: [
     BrowserModule,

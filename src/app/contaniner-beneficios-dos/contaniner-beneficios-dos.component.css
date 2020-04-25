@@ -31,6 +31,7 @@ body {
 .container-imagems-dos{
     display: flex;
     flex-direction: column;
+    
 }
 
 .imagem-dos {
@@ -45,13 +46,14 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    height: 10px;
 }
 
 .imagem-dos-feliz{
     width: 800px;
     height: 600px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     position: relative;
     transform: translateX(-700px);
     transform: translateY(-650px);
