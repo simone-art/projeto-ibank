@@ -1,0 +1,25 @@
+body {
+    margin: 0 auto;
+}
+
+.container-bemvindos {
+    display: flex;
+    flex-direction: row;
+}
+
+.imagem-bemvindos{
+    width: 400px;
+    height: 350px;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+
+.bemvindos-ibank {
+    color: blueviolet;
+    font-size: 50px;
+    margin-top: 120px;
+    margin-left: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
