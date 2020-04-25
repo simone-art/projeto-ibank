@@ -8,6 +8,7 @@ import { ContainerBemvindosComponent } from './container-bemvindos/container-bem
 import { ContainerBeneficiosComponent } from './container-beneficios/container-beneficios.component';
 import { ContaninerBeneficiosDosComponent } from './contaniner-beneficios-dos/contaniner-beneficios-dos.component';
 import { ContainerBeneficiosTresComponent } from './container-beneficios-tres/container-beneficios-tres.component';
+import { FooterIbankComponent } from './footer-ibank/footer-ibank.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ContainerBeneficiosTresComponent } from './container-beneficios-tres/co
     ContainerBemvindosComponent,
     ContainerBeneficiosComponent,
     ContaninerBeneficiosDosComponent,
-    ContainerBeneficiosTresComponent
+    ContainerBeneficiosTresComponent,
+    FooterIbankComponent
   ],
   imports: [
     BrowserModule,
