@@ -5,10 +5,10 @@
         <div class="usuario-login">
         <h1>LOGIN CONTA IBANK</h1>
         <p class="texto-usuario-login">Usuário</p>
-        <input type="text" placeholder="Digite o seu usuário">
+        <input type="text" [value]="InitialValue" (keyup)="digitouNome($event)">
         <hr>
         <p class="texto-usuario-login">Número da Conta</p>
-        <input type="text" placeholder="Digite o número da conta">
+        <input type="number" placeholder="Digite o número da conta">
         <hr>
         <p class="texto-usuario-login">Agencia</p>
         <input type="text"placeholder="Digite o número da agencia">
