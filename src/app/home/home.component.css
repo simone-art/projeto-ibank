@@ -32,10 +32,10 @@ body {
 
 .imagem-beneficios {
     margin-top: 10px;
-    width: 450px;
-    height: 500px;
+    width: 350px;
+    height: 400px;
     margin-right: 10px;
-    margin-left: 50px;
+    margin-left: 70px;
     border-radius: 20px;
 }
 
@@ -43,7 +43,7 @@ body {
     margin-top: 10px;
     margin-right: 10px;
     margin-left: 50px;
-    font-size: 40px;
+    font-size: 35px;
     color: blueviolet;
     text-align: center;
 }
@@ -58,10 +58,10 @@ body {
 
 .imagem-beneficios-dos {
     margin-top: 10px;
-    width: 450px;
-    height: 500px;
+    width: 350px;
+    height: 400px;
     margin-right: 10px;
-    margin-left: 50px;
+    margin-left: 70px;
     border-radius: 20px;
 }
 
@@ -69,7 +69,7 @@ body {
     margin-top: 10px;
     margin-right: 10px;
     margin-left: 50px;
-    font-size: 40px;
+    font-size: 35px;
     color: blueviolet;
     text-align: center;
 }
