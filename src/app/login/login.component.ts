@@ -17,6 +17,7 @@ export class LoginComponent implements OnInit {
   }
   enviarDados(){
     console.log ('Babú perdeu o Big Brother');
+
   }
 
   digitouNome($event){
