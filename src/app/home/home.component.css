@@ -1,0 +1,75 @@
+body {
+    margin: 0 auto;
+}
+
+.container-bemvindos {
+    display: flex;
+    flex-direction: row;
+}
+
+.imagem-bemvindos{
+    width: 400px;
+    height: 350px;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+
+.bemvindos-ibank {
+    color: blueviolet;
+    font-size: 50px;
+    margin-top: 120px;
+    margin-left: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container-beneficios, .textos-beneficios {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imagem-beneficios {
+    margin-top: 10px;
+    width: 450px;
+    height: 500px;
+    margin-right: 10px;
+    margin-left: 50px;
+    border-radius: 20px;
+}
+
+.beneficios-ibank {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 50px;
+    font-size: 40px;
+    color: blueviolet;
+    text-align: center;
+}
+
+.container-beneficios-dos, .textos-beneficios-dos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.imagem-beneficios-dos {
+    margin-top: 10px;
+    width: 450px;
+    height: 500px;
+    margin-right: 10px;
+    margin-left: 50px;
+    border-radius: 20px;
+}
+
+.beneficios-ibank-dos {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 50px;
+    font-size: 40px;
+    color: blueviolet;
+    text-align: center;
+}
