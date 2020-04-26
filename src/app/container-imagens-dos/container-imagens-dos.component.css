@@ -1,0 +1,23 @@
+body{
+    margin: 0 auto;
+}
+
+.beneficios-tres, .beneficios-quatro{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.imagem-caixa-eletronico, .imagem-meditation {
+    width: 450px;
+    margin-left: 60px;
+}
+
+.texto-beneficios-tres, .texto-beneficios-quatro{
+    margin-top: 100px;
+    margin-right: 10px;
+    margin-left: 50px;
+    font-size: 40px;
+    color: blueviolet;
+    text-align: center;
+} 

@@ -9,6 +9,7 @@ import { FooterIbankComponent } from './footer-ibank/footer-ibank.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { ContainerImagemsComponent } from './container-imagems/container-imagems.component';
+import { ContainerImagensDosComponent } from './container-imagens-dos/container-imagens-dos.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { ContainerImagemsComponent } from './container-imagems/container-imagems
     FooterIbankComponent,
     LoginComponent,
     HomeComponent,
-    ContainerImagemsComponent
+    ContainerImagemsComponent,
+    ContainerImagensDosComponent
   ],
   imports: [
     BrowserModule,
