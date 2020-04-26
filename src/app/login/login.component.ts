@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class LoginComponent implements OnInit {
 
   valorDoInput = '';
+  numeroConta = '';
+  numeroAgencia = '';
+  senhaValor = '';
 
   constructor() { }
   ngOnInit(): void {
@@ -20,6 +23,21 @@ export class LoginComponent implements OnInit {
     this.valorDoInput = $event.target.value;
     console.log($event.target.value);
 
+  }
+
+  digitouNumero($event){
+    this.numeroConta = $event.target.value;
+    console.log($event.target.value);
+  }
+
+  digitouAgencia($event){
+    this.numeroAgencia = $event.target.value;
+    console.log($event.target.value);
+  }
+
+  digitouSenha($event){
+    this.senhaValor = $event.target.value;
+    console.log($event.target.value);
   }
 
 }

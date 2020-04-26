@@ -8,17 +8,13 @@
         <input type="text" [value]="valorDoInput" (keyup)="digitouNome($event)">
         <hr>
         <p class="texto-usuario-login">Número da Conta</p>
-        <input type="number" placeholder="Digite o número da conta">
+        <input type="number" [value]="numeroConta" (keyup)="digitouNumero($event)">
         <hr>
         <p class="texto-usuario-login">Agencia</p>
-        <input type="text"placeholder="Digite o número da agencia">
-        <hr>
-        <p class="texto-usuario-login">Operação a realizar</p>
-        <select name="" id="">Tranferência</select>
-        <select name="" id="">Extrato</select>
+        <input type="number" [value]="numeroAgencia" (keyup)="digitouAgencia($event)">
         <hr>
         <p>Senha</p>
-        <input type="text"placeholder="Digite a sua senha">
+        <input type="password" [value]="senhaValor" (keyup)="digitouSenha($event)" >
         <hr>
         <button (click)="enviarDados()" type="ngsubmit" class="btn-logar">Logar</button>
         </div>
