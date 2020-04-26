@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  InitialValue = 'Digite o seu usuário';
+  valorDoInput = '';
 
   constructor() { }
   ngOnInit(): void {
@@ -17,7 +17,8 @@ export class LoginComponent implements OnInit {
   }
 
   digitouNome($event){
-    console.log($event);
+    this.valorDoInput = $event.target.value;
+    console.log($event.target.value);
 
   }
 
