@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-login',
@@ -12,11 +13,22 @@ export class LoginComponent implements OnInit {
   numeroAgencia = '';
   senhaValor = '';
 
-  constructor() { }
+  cliente = {};
+
+  constructor(private http: HttpClient) { }
+
   ngOnInit(): void {
   }
   enviarDados(){
     console.log ('Babú perdeu o Big Brother');
+    this.http.post("http://localhost:57434/api/clientes/login", {
+      Conta: this.numeroConta,
+      Agencia: this.numeroAgencia,
+      Senha: this.senhaValor
+    }).subscribe((dados: any)=>{
+      this.cliente = dados;
+      console.log(this.cliente)
+    });
 
   }
 
