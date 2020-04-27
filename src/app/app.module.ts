@@ -10,6 +10,7 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { ContainerImagemsComponent } from './container-imagems/container-imagems.component';
 import { ContainerImagensDosComponent } from './container-imagens-dos/container-imagens-dos.component';
+import { ExtratoComponent } from './extrato/extrato.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ContainerImagensDosComponent } from './container-imagens-dos/container-
     LoginComponent,
     HomeComponent,
     ContainerImagemsComponent,
-    ContainerImagensDosComponent
+    ContainerImagensDosComponent,
+    ExtratoComponent
   ],
   imports: [
     BrowserModule,
