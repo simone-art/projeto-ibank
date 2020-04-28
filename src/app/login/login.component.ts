@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -13,25 +14,12 @@ export class LoginComponent implements OnInit {
   numeroAgencia = '';
   senhaValor = '';
 
-  cliente = {};
+  cliente: any;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private router: Router) { }
 
   ngOnInit(): void {
   }
-  enviarDados(){
-    console.log ('Babú perdeu o Big Brother');
-    this.http.post("http://localhost:57434/api/clientes/login", {
-      Conta: this.numeroConta,
-      Agencia: this.numeroAgencia,
-      Senha: this.senhaValor
-    }).subscribe((dados: any)=>{
-      this.cliente = dados;
-      console.log(this.cliente)
-    });
-
-  }
-
   digitouNome($event){
     this.valorNome = $event.target.value;
     console.log($event.target.value);
@@ -51,5 +39,22 @@ export class LoginComponent implements OnInit {
     this.senhaValor = $event.target.value;
     console.log($event.target.value);
   }
+
+  enviarDados(){
+    console.log ('Babú perdeu o Big Brother');
+    this.http.post('https://ibanklogin20200427194521.azurewebsites.net/api/clientes/login', {
+      Conta: this.numeroConta,
+      Agencia: this.numeroAgencia,
+      Senha: this.senhaValor
+    }).subscribe((dados: any) => {
+      this.cliente = dados;
+      localStorage.setItem('cliente', JSON.stringify(this.cliente));
+      this.router.navigate(['home']);
+      console.log(this.cliente);
+    });
+  }
+  redirect() {
+    this.router.navigate(['home']);
+}
 
 }
