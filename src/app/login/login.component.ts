@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -7,24 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  valorDoInput = '';
   numeroConta = '';
   numeroAgencia = '';
   senhaValor = '';
+  router: any;
 
   constructor() { }
   ngOnInit(): void {
   }
-  enviarDados(){
-    console.log ('Babú perdeu o Big Brother');
-  }
-
-  digitouNome($event){
-    this.valorDoInput = $event.target.value;
-    console.log($event.target.value);
-
-  }
-
   digitouNumero($event){
     this.numeroConta = $event.target.value;
     console.log($event.target.value);
@@ -38,6 +29,14 @@ export class LoginComponent implements OnInit {
   digitouSenha($event){
     this.senhaValor = $event.target.value;
     console.log($event.target.value);
+  }
+
+  enviarDados(numeroConta, senhaValor){
+    const numero = numeroConta.value;
+    const senha = senhaValor.value;
+    const novoSaldo = numeroConta - senhaValor;
+    console.log ('seu novo saldo é' + novoSaldo);
+    alert('Seu novo saldo é:'  + novoSaldo);
   }
 
 }
