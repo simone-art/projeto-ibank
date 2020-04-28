@@ -5,7 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 import { FooterIbankComponent } from './footer-ibank/footer-ibank.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
@@ -16,7 +15,6 @@ import { ContainerImagensDosComponent } from './container-imagens-dos/container-
 @NgModule({
   declarations: [
     AppComponent,
-    CabecalhoComponent,
     FooterIbankComponent,
     LoginComponent,
     HomeComponent,
