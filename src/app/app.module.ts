@@ -13,6 +13,7 @@ import { ContainerImagemsComponent } from './container-imagems/container-imagems
 import { ContainerImagensDosComponent } from './container-imagens-dos/container-imagens-dos.component';
 import { ExtratoComponent } from './extrato/extrato.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { TransferenciaComponent } from './transferencia/transferencia.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     ContainerImagemsComponent,
     ContainerImagensDosComponent,
     ExtratoComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    TransferenciaComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,112 @@
+body {
+    margin: 0 auto;
+}
+
+.nav-ibank {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 1400px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: blueviolet;
+}
+
+.nome-ibank,.home, .login,.transferencia, .extrato{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.imagem-cabecalho {
+    width: 1400px;
+    height: 400px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+
+.tela-login{
+    display: flex;
+    flex-direction: row;
+}
+
+.celular{
+width: 500px;
+height: 500px;
+margin-left: 80px;
+margin-top: 30px;
+margin-bottom: 30px;
+}
+
+.usuario-login {
+    margin-top: 15px;
+    margin-left: 80px;
+}
+
+.texto-usuario-login {
+    font-size: 18px;
+    color: black;
+}
+
+.btn-logar{
+    width: 200px;
+    height: 40px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 20px;
+    margin-left: 30px;
+}
+
+
+.container-imagems-dos{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.imagem-dos {
+    width: 450px;
+    height: 300px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 60px;
+}
+
+.imagem-feliz {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 10px;
+}
+
+.imagem-dos-feliz{
+    width: 800px;
+    height: 600px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    transform: translateX(-700px);
+    transform: translateY(-650px);
+}
+
+.beneficios-tres, .beneficios-quatro{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.imagem-caixa-eletronico, .imagem-meditation {
+    width: 450px;
+    margin-left: 60px;
+}
+
+.texto-beneficios-tres, .texto-beneficios-quatro{
+    margin-top: 100px;
+    margin-right: 10px;
+    margin-left: 50px;
+    font-size: 35px;
+    color: blueviolet;
+    text-align: center;
+} 

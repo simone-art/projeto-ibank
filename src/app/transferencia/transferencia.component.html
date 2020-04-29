@@ -2,7 +2,8 @@
     <div class="cabecalho">
         <nav class="nav-ibank">
             <a routerLink="/home" class="nome-ibank">IBANK</a>
-            <a routerLink="transferencia" class="transferencia">Transferencia</a>
+            <a routerLink="/login" class="login">Login</a>
+            <a routerLink="/transferencia" class="transferencia">Transferência</a>
             <a routerLink="/extrato" class="extrato">Extrato</a>
         </nav>
         <div>
@@ -10,22 +11,23 @@
         </div>
     </div>
 </section>
-
-<section class="extrato">
-    <div class="tela-extrato">
+<section class="login">
+    <div class="tela-login">
         <img src="../../assets/images/celular2.jpg" class="celular" alt="">
-        <div class="usuario-extrato">
-            <div class="extrato-ibank">
-                <h1 class="texto-usuario-extrato">EXTRATOS CONTA IBANK</h1>
-                <p class="texto-usuario-extrato">Número Conta Cliente: {{contaCliente}} </p>
-                <p class="texto-usuario-extrato">Número Conta Destinatario:{{ContaDestinatario}} </p>
-                <p class="texto-usuario-extrato">Valor da Transferência: {{valorTransferido}}</p>
-                <p class="texto-usuario-extrato">Descrição:{{descricao}} </p>
-                <p class="texto-usuario-extrato">Data: {{data}}</p>
-                <button type="ngsubmit" class="btn-logar">Voltar transferencia</button>
-            </div> 
+        <div class="usuario-login">
+                <h1 class="texto-usuario-login">TRANSFERÊNCIA CONTA IBANK</h1>
+                <p class="texto-usuario-login">Número da Conta a transferir:{{contaCliente}}  </p>
+                <hr>
+                <p class="texto-usuario-login">Número da Conta Destinatário:{{ContaDestinatario}} </p>
+                <hr>
+                <p class="texto-usuario-login">Valor a Transferir:{{valorTransferido}} </p>
+                <hr>
+                <p class="texto-usuario-login">Revise os dados e confirme ao clicar botão</p>
+                <hr>
+                <button (click)="enviarTransferencia($event)" type="ngSubmit" class="btn-logar">Confirmar</button>
         </div>
     </div>
+
 </section>
 
 
