@@ -3,6 +3,7 @@
         <nav class="nav-ibank">
             <a routerLink="home" class="nome-ibank">IBANK</a>
             <a routerLink="login" class="login">Login</a>
+            <a routerLink="extrato" class="extrato">Extrato</a>
         </nav>
         <div>
             <img src="../../assets/images/background5 (1).jpg" class="imagem-cabecalho" alt="">
@@ -13,20 +14,20 @@
     <div class="tela-login">
         <img src="../../assets/images/celular2.jpg" class="celular" alt="">
         <div class="usuario-login">
-            <h1>LOGIN CONTA IBANK</h1>
-            <p class="texto-usuario-login">Usuário</p>
-            <input type="text" [value]="valorNome" (keyup)="digitouNome($event)">
-            <hr>
-            <p class="texto-usuario-login">Número da Conta</p>
-            <input type="text" [value]="numeroConta" (keyup)="digitouNumero($event)">
-            <hr>
-            <p class="texto-usuario-login">Agencia</p>
-            <input type="text" [value]="numeroAgencia" (keyup)="digitouAgencia($event)">
-            <hr>
-            <p>Senha</p>
-            <input type="password" [value]="senhaValor" (keyup)="digitouSenha($event)">
-            <hr>
-            <button (click)="enviarDados()" type="ngsubmit" class="btn-logar">Logar</button>
+            <form #form = "ngForm" (ngSubmit) ="onSubmit(form)">
+                <h1 class="texto-usuario-login">LOGIN CONTA IBANK</h1>
+                <p class="texto-usuario-login">Número da Conta</p>
+                <input type="text" [value]="numeroConta" (keyup)="digitouNumero($event)" name="numeroConta" ngModel>
+                <hr>
+                <p class="texto-usuario-login">Agencia</p>
+                <input type="text" [value]="numeroAgencia" (keyup)="digitouAgencia($event)" name="numeroAgencia"
+                    ngmodel>
+                <hr>
+                <p class="texto-usuario-login">Senha</p>
+                <input type="password" [value]="senhaValor" (keyup)="digitouSenha($event)" name="senhaValor" ngModel>
+                <hr>
+                <button (click)="enviarDados($event)" type="ngSubmit" class="btn-logar">Logar</button>
+            </form>
         </div>
     </div>
 

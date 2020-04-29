@@ -15,14 +15,11 @@ export class LoginComponent implements OnInit {
   senhaValor = '';
 
   cliente: any;
+  form: any;
 
   constructor(private http: HttpClient, private router: Router) { }
 
   ngOnInit(): void {
-  }
-  digitouNome($event){
-    this.valorNome = $event.target.value;
-    console.log($event.target.value);
   }
 
   digitouNumero($event){
@@ -40,7 +37,12 @@ export class LoginComponent implements OnInit {
     console.log($event.target.value);
   }
 
-  enviarDados(){
+  onSubmit(form){
+    console.log(form.value);
+  }
+
+  enviarDados($event){
+    $event.preventDefault();
     console.log ('Babú perdeu o Big Brother');
     this.http.post('https://ibanklogin20200427194521.azurewebsites.net/api/clientes/login', {
       Conta: this.numeroConta,
@@ -49,12 +51,23 @@ export class LoginComponent implements OnInit {
     }).subscribe((dados: any) => {
       this.cliente = dados;
       localStorage.setItem('cliente', JSON.stringify(this.cliente));
-      this.router.navigate(['home']);
-      console.log(this.cliente);
+      try {
+        this.router.navigate(['home']);
+        console.log(this.cliente);
+      }
+      catch (error){
+        this.errormensagem();
+        console.log('Usuário não existe');
+      }
     });
   }
+
   redirect() {
     this.router.navigate(['home']);
-}
+  }
+
+  errormensagem(){
+    alert('Usuário não existe. Tente de novo e escreva seus dados corretamente');
+  }
 
 }
