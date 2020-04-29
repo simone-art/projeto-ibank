@@ -52,7 +52,7 @@ export class LoginComponent implements OnInit {
       this.cliente = dados;
       localStorage.setItem('cliente', JSON.stringify(this.cliente));
       try {
-        this.router.navigate(['home']);
+        this.router.navigate(['/transferencia']);
         console.log(this.cliente);
       }
       catch (error){
@@ -63,7 +63,7 @@ export class LoginComponent implements OnInit {
   }
 
   redirect() {
-    this.router.navigate(['home']);
+    this.router.navigate(['/transferencia']);
   }
 
   errormensagem(){

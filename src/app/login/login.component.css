@@ -12,7 +12,7 @@ body {
     background-color: blueviolet;
 }
 
-.nome-ibank,.home, .login, .extrato{
+.nome-ibank,.home, .login,.transferencia, .extrato{
     color: white;
     font-size: 20px;
     text-decoration: none;
