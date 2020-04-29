@@ -58,3 +58,55 @@ margin-bottom: 30px;
     border-radius: 20px;
     margin-left: 30px;
 }
+
+
+.container-imagems-dos{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.imagem-dos {
+    width: 450px;
+    height: 300px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 60px;
+}
+
+.imagem-feliz {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 10px;
+}
+
+.imagem-dos-feliz{
+    width: 800px;
+    height: 600px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    transform: translateX(-700px);
+    transform: translateY(-650px);
+}
+
+.beneficios-tres, .beneficios-quatro{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.imagem-caixa-eletronico, .imagem-meditation {
+    width: 450px;
+    margin-left: 60px;
+}
+
+.texto-beneficios-tres, .texto-beneficios-quatro{
+    margin-top: 100px;
+    margin-right: 10px;
+    margin-left: 50px;
+    font-size: 35px;
+    color: blueviolet;
+    text-align: center;
+} 
