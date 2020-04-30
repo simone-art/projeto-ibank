@@ -17,12 +17,11 @@
         <div class="usuario-extrato">
             <div class="extrato-ibank">
                 <h1 class="texto-usuario-extrato">EXTRATOS CONTA IBANK</h1>
-                <p class="texto-usuario-extrato">Número Conta Cliente: {{contaCliente}} </p>
-                <p class="texto-usuario-extrato">Número Conta Destinatario:{{ContaDestinatario}} </p>
-                <p class="texto-usuario-extrato">Valor da Transferência: {{valorTransferido}}</p>
+                <p class="texto-usuario-extrato">Número Conta Cliente: {{numeroConta}} </p>
+                <p class="texto-usuario-extrato">Saldo en conta: {{saldoConta}}</p>
                 <p class="texto-usuario-extrato">Descrição:{{descricao}} </p>
                 <p class="texto-usuario-extrato">Data: {{data}}</p>
-                <button type="ngsubmit" class="btn-logar">Voltar transferencia</button>
+                <button (click)= "voltarTransferencia($event)" type="ngsubmit" class="btn-logar">Voltar transferencia</button>
             </div> 
         </div>
     </div>

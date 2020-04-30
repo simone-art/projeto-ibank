@@ -16,7 +16,7 @@
             <form #form = "ngForm" (ngSubmit) ="onSubmit(form)">
                 <h1 class="texto-usuario-login">LOGIN CONTA IBANK</h1>
                 <p class="texto-usuario-login">Número da Conta</p>
-                <input type="text" [value]="numeroConta" (keyup)="digitouNumero($event)" name="numeroConta" ngModel>
+                <input type="text" [value]="numeroConta" (keyup)="digitouNumero($event)" name="numeroConta" id="campo1" ngModel>
                 <hr>
                 <p class="texto-usuario-login">Agencia</p>
                 <input type="text" [value]="numeroAgencia" (keyup)="digitouAgencia($event)" name="numeroAgencia"

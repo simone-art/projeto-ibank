@@ -8,8 +8,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class TransferenciaComponent implements OnInit {
 
-  contaCliente = '';
-  ContaDestinatario = '';
+  numeroConta = '';
+  contaDestinatario = '';
   valorTransferido = '';
   cliente: any;
 
@@ -18,27 +18,27 @@ export class TransferenciaComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  contaCliente($event){
+    this.numeroConta = $event.target.value;
+    console.log($event.target.value);
+  }
+
+  digitaContaDestinatario($event){
+    this.contaDestinatario = $event.target.value;
+    console.log($event.target.value);
+  }
+
+  digitaValorTransferir($event){
+    this.valorTransferido = $event.target.value;
+    console.log($event.target.value);
+  }
   enviarTransferencia($event){
     $event.preventDefault();
-    console.log ('Babú perdeu o Big Brother');
-    this.http.post('https://ibanklogin20200427194521.azurewebsites.net/api/clientes/login', {
-      contaCliente: this.contaCliente,
-      ContaDestinatario: this.ContaDestinatario,
-      valorTransferido: this.valorTransferido
-    }).subscribe((dados: any) => {
-      this.cliente = dados;
-      localStorage.setItem('cliente', JSON.stringify(this.cliente));
-      try {
-        console.log(this.cliente);
-        alert('Transação efetuada com sucesso');
-      }
-      catch (error){
-        alert('Transação não efetuada com sucesso');
-        console.log('Usuário não existe');
-      }
-    });
+    console.log('Babú perdeu o Big Brother');
+    alert('Transação efetuada com sucesso');
+
   }
 
 }
-
 

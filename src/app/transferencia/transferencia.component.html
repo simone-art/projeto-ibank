@@ -14,14 +14,17 @@
     <div class="tela-login">
         <img src="../../assets/images/celular2.jpg" class="celular" alt="">
         <div class="usuario-login">
-                <h1 class="texto-usuario-login">TRANSFERÊNCIA CONTA IBANK</h1>
-                <p class="texto-usuario-login">Número da Conta a transferir:{{contaCliente}}  </p>
+                <h1 class="texto-usuario-transferencia">TRANSFERÊNCIA CONTA IBANK</h1>
+                <p class="texto-usuario-transferencia">Número da Conta</p>
+                <input type="number" [value]="numeroConta" (keyup)="contaCliente($event)">
                 <hr>
-                <p class="texto-usuario-login">Número da Conta Destinatário:{{ContaDestinatario}} </p>
+                <p class="texto-usuario-transferencia">Número da Conta Destinatário</p>
+                <input type="number" [value]="contaDestinatario" (keyup)="digitaContaDestinatario($event)">
                 <hr>
-                <p class="texto-usuario-login">Valor a Transferir:{{valorTransferido}} </p>
+                <p class="texto-usuario-transferencia">Valor a Transferir</p>
+                <input type="double" [value]="valorTransferido" (keyup)="digitaValorTransferir($event)">
                 <hr>
-                <p class="texto-usuario-login">Revise os dados e confirme ao clicar botão</p>
+                <p class="texto-usuario-transferencia">Revise os dados e confirme ao clicar botão</p>
                 <hr>
                 <button (click)="enviarTransferencia($event)" type="ngSubmit" class="btn-logar">Confirmar</button>
         </div>

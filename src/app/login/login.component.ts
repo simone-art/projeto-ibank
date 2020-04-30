@@ -17,6 +17,7 @@ export class LoginComponent implements OnInit {
   cliente: any;
   form: any;
 
+
   constructor(private http: HttpClient, private router: Router) { }
 
   ngOnInit(): void {
@@ -71,3 +72,5 @@ export class LoginComponent implements OnInit {
   }
 
 }
+
+
