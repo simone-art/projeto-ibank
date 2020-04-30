@@ -13,19 +13,19 @@
     <div class="tela-login">
         <img src="../../assets/images/celular2.jpg" class="celular" alt="">
         <div class="usuario-login">
-            <form #form = "ngForm" (ngSubmit) ="onSubmit(form)">
+            <form #form ="ngForm" (ngSubmit)="onSubmit(form)">
                 <h1 class="texto-usuario-login">LOGIN CONTA IBANK</h1>
                 <p class="texto-usuario-login">Número da Conta</p>
-                <input type="text" [value]="numeroConta" (keyup)="digitouNumero($event)" name="numeroConta" id="campo1" ngModel>
+                <input type="text" [value]="numeroConta" (keyup)="digitouNumero($event)" name="numeroConta" required ngModel>
                 <hr>
                 <p class="texto-usuario-login">Agencia</p>
                 <input type="text" [value]="numeroAgencia" (keyup)="digitouAgencia($event)" name="numeroAgencia"
-                    ngmodel>
+                  required  ngmodel>
                 <hr>
                 <p class="texto-usuario-login">Senha</p>
-                <input type="password" [value]="senhaValor" (keyup)="digitouSenha($event)" name="senhaValor" ngModel>
+                <input type="password" [value]="senhaValor" (keyup)="digitouSenha($event)" name="senhaValor" required ngModel>
                 <hr>
-                <button (click)="enviarDados($event)" type="ngSubmit" class="btn-logar">Logar</button>
+                <button (click)="enviarDados($event)" type="submit" class="btn-logar">Logar</button>
             </form>
         </div>
     </div>

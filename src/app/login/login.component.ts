@@ -42,10 +42,12 @@ export class LoginComponent implements OnInit {
     console.log(form.value);
   }
 
+
   enviarDados($event){
     $event.preventDefault();
     console.log ('Babú perdeu o Big Brother');
-    this.http.post('https://ibanklogin20200427194521.azurewebsites.net/api/clientes/login', {
+
+    this.http.post('https://ibank20200430024938.azurewebsites.net/api/users/login', {
       Conta: this.numeroConta,
       Agencia: this.numeroAgencia,
       Senha: this.senhaValor
@@ -70,7 +72,6 @@ export class LoginComponent implements OnInit {
   errormensagem(){
     alert('Usuário não existe. Tente de novo e escreva seus dados corretamente');
   }
-
 }
 
 

@@ -13,7 +13,6 @@ export class TransferenciaComponent implements OnInit {
   valorTransferido = '';
   cliente: any;
 
-
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
@@ -36,8 +35,15 @@ export class TransferenciaComponent implements OnInit {
   enviarTransferencia($event){
     $event.preventDefault();
     console.log('Babú perdeu o Big Brother');
-    alert('Transação efetuada com sucesso');
-
+    this.http.post('https://ibank20200430024938.azurewebsites.net/api/transfers', {
+      Conta: this.numeroConta,
+      contaDestinatario: this.contaDestinatario,
+      valorTransferido: this.valorTransferido
+    }).subscribe((dados: any) => {
+      this.cliente = dados;
+      localStorage.setItem('cliente', JSON.stringify(this.cliente));
+      alert('Transação efetuada com sucesso');
+    });
   }
 
 }

@@ -16,13 +16,13 @@
         <div class="usuario-login">
                 <h1 class="texto-usuario-transferencia">TRANSFERÊNCIA CONTA IBANK</h1>
                 <p class="texto-usuario-transferencia">Número da Conta</p>
-                <input type="number" [value]="numeroConta" (keyup)="contaCliente($event)">
+                <input type="number" [value]="numeroConta" (keyup)="contaCliente($event)" required>
                 <hr>
                 <p class="texto-usuario-transferencia">Número da Conta Destinatário</p>
-                <input type="number" [value]="contaDestinatario" (keyup)="digitaContaDestinatario($event)">
+                <input type="number" [value]="contaDestinatario" (keyup)="digitaContaDestinatario($event)" required>
                 <hr>
                 <p class="texto-usuario-transferencia">Valor a Transferir</p>
-                <input type="double" [value]="valorTransferido" (keyup)="digitaValorTransferir($event)">
+                <input type="double" [value]="valorTransferido" (keyup)="digitaValorTransferir($event)" required>
                 <hr>
                 <p class="texto-usuario-transferencia">Revise os dados e confirme ao clicar botão</p>
                 <hr>
