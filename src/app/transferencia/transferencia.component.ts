@@ -11,7 +11,7 @@ export class TransferenciaComponent implements OnInit {
   numeroConta = '';
   contaDestinatario = '';
   valorTransferido = '';
-  cliente: any;
+  user: any;
 
   constructor(private http: HttpClient) { }
 
@@ -36,12 +36,12 @@ export class TransferenciaComponent implements OnInit {
     $event.preventDefault();
     console.log('Babú perdeu o Big Brother');
     this.http.post('https://ibank20200430024938.azurewebsites.net/api/transfers', {
-      Conta: this.numeroConta,
-      contaDestinatario: this.contaDestinatario,
-      valorTransferido: this.valorTransferido
+      Account: this.numeroConta,
+      DestinyAccount: this.contaDestinatario,
+      Amount: this.valorTransferido
     }).subscribe((dados: any) => {
-      this.cliente = dados;
-      localStorage.setItem('cliente', JSON.stringify(this.cliente));
+      this.user = dados;
+      localStorage.setItem('user', JSON.stringify(this.user));
       alert('Transação efetuada com sucesso');
     });
   }

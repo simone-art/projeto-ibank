@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
   numeroAgencia = '';
   senhaValor = '';
 
-  cliente: any;
+  user: any;
   form: any;
 
 
@@ -48,19 +48,18 @@ export class LoginComponent implements OnInit {
     console.log ('Babú perdeu o Big Brother');
 
     this.http.post('https://ibank20200430024938.azurewebsites.net/api/users/login', {
-      Conta: this.numeroConta,
-      Agencia: this.numeroAgencia,
-      Senha: this.senhaValor
+      Account: this.numeroConta,
+      Agency: this.numeroAgencia,
+      Password: this.senhaValor
     }).subscribe((dados: any) => {
-      this.cliente = dados;
-      localStorage.setItem('cliente', JSON.stringify(this.cliente));
+      this.user = dados;
+      localStorage.setItem('user', JSON.stringify(this.user));
       try {
         this.router.navigate(['/transferencia']);
-        console.log(this.cliente);
+        console.log(this.user);
       }
       catch (error){
-        this.errormensagem();
-        console.log('Usuário não existe');
+        alert('Usuário não existe. Tente de novo e escreva seus dados corretamente');
       }
     });
   }
