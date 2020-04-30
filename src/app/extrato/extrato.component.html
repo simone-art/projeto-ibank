@@ -2,7 +2,7 @@
     <div class="cabecalho">
         <nav class="nav-ibank">
             <a routerLink="/home" class="nome-ibank">IBANK</a>
-            <a routerLink="/transferencia" class="transferencia">Transferencia</a>
+            <a routerLink="/transferencia" class="transferencia">Transferência</a>
             <a routerLink="/extrato" class="extrato">Extrato</a>
         </nav>
         <div>
@@ -18,7 +18,7 @@
             <div class="extrato-ibank">
                 <h1 class="texto-usuario-extrato">EXTRATOS CONTA IBANK</h1>
                 <p class="texto-usuario-extrato">Número Conta Cliente: {{numeroConta}} </p>
-                <p class="texto-usuario-extrato">Saldo en conta: {{saldoConta}}</p>
+                <p class="texto-usuario-extrato">Saldo em conta: {{saldoConta}}</p>
                 <p class="texto-usuario-extrato">Descrição:{{descricao}} </p>
                 <p class="texto-usuario-extrato">Data: {{data}}</p>
                 <button (click)= "voltarTransferencia($event)" type="ngsubmit" class="btn-logar">Voltar transferencia</button>
