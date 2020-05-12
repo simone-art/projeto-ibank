@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { ExtratoService } from './extrato.service';
 
 @Component({
   selector: 'app-extrato',
@@ -9,28 +9,24 @@ import { Router } from '@angular/router';
 })
 export class ExtratoComponent implements OnInit {
 
-  numeroConta = '';
-  saldoConta = '';
-  descricao = '';
-  data = '';
+  extratos: {
+    id: number;
+    contaCliente: number;
+    saldoConta: number;
+    descricao: string;
+  }[];
 
-  cliente: any;
+  constructor(private extratoService: ExtratoService) {
+    console.log(extratoService);
+  }
 
-  constructor(private http: HttpClient, private router: Router) { }
-
-  ngOnInit(): void {
-    this.http.post('https://ibanklogin20200427194521.azurewebsites.net/api/clientes/login', {
-          numeroConta: this.numeroConta,
-          saldoConta: this.saldoConta,
-          descricao: this.descricao,
-          data: this.data
-        }).subscribe((dados: any) => {
-          this.cliente = dados;
-          localStorage.setItem('cliente', JSON.stringify(this.cliente));
-        });
-      }
-      voltarTransferencia($event){
-        console.log('funciona botão');
-        this.router.navigate(['/transferencia']);
-    }
+  ngOnInit() {
+    console.log('chamou a getExtratos');
+    this.extratoService.getExtratos()
+    .subscribe(response => {
+      this.extratos = response;
+      console.log('obteve o retorno da getExtratos');
+      console.log(response);
+    });
+  }
 }

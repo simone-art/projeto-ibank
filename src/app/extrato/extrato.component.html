@@ -17,11 +17,14 @@
         <div class="usuario-extrato">
             <div class="extrato-ibank">
                 <h1 class="texto-usuario-extrato">EXTRATOS CONTA IBANK</h1>
-                <p class="texto-usuario-extrato">Número Conta Cliente: {{numeroConta}} </p>
-                <p class="texto-usuario-extrato">Saldo em conta: {{saldoConta}}</p>
-                <p class="texto-usuario-extrato">Descrição:{{descricao}} </p>
-                <p class="texto-usuario-extrato">Data: {{data}}</p>
-                <button (click)= "voltarTransferencia($event)" type="ngsubmit" class="btn-logar">Voltar transferencia</button>
+                <table>
+                    <tr *ngFor = "let extrato of extratos">
+                    <td>{{extrato.contaCliente}}</td>
+                    <td>{{extrato.saldoConta |currency:'BRL'}}</td>
+                    <td>{{extrato.descricao}}</td>
+                    </tr>
+                </table>
+                <button type="ngsubmit" class="btn-logar">Voltar transferencia</button>
             </div> 
         </div>
     </div>
