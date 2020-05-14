@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ExtratoService } from './extrato.service';
+import { Extrato } from './extrato.interfaces';
 
 @Component({
   selector: 'app-extrato',
@@ -9,14 +10,10 @@ import { ExtratoService } from './extrato.service';
 })
 export class ExtratoComponent implements OnInit {
 
-  extratos: {
-    id: number;
-    contaCliente: number;
-    saldoConta: number;
-    descricao: string;
-  }[];
+  extratos: Extrato[];
 
-  constructor(private extratoService: ExtratoService) {
+
+  constructor(private extratoService: ExtratoService, private router: Router) {
     console.log(extratoService);
   }
 
@@ -28,5 +25,9 @@ export class ExtratoComponent implements OnInit {
       console.log('obteve o retorno da getExtratos');
       console.log(response);
     });
+  }
+  voltarTranferencia($event){
+    console.log('botâo funciona');
+    this.router.navigate(['/transferencia']);
   }
 }

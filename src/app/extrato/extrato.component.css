@@ -53,6 +53,40 @@ margin-bottom: 30px;
 .texto-usuario-extrato {
     font-size: 18px;
     color: black;
+    align-content: center;
+}
+
+.table-ibank{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: black;
+    background-color: purple;
+    width: 700px;
+
+}
+
+.item-extrato{
+    margin-right: 30px;
+    color: black;
+}
+
+.item-extrato-conta {
+    margin: 0 auto;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.item-extrato-saldo{
+    margin: 0 auto;
+    margin-left: 150px;
+    margin-top: 10px;
+}
+
+.item-extrato-descricao{
+    margin: 0 auto;
+    margin-left: 100px;
+    margin-top: 10px;
 }
 
 .btn-logar{
