@@ -1,45 +1,35 @@
 <section>
     <div class="cabecalho">
         <nav class="nav-ibank">
-<<<<<<< HEAD
-            <a routerLink="home" class="nome-ibank">IBANK</a>
-            <a routerLink="transferencia" class="transferencia">Transferencia</a>
-            <a routerLink="extrato" class="extrato">Extrato</a>
-        </nav>
-        <div>
-            <img src="../../assets/images/background5 (1).jpg" class="imagem-cabecalho" alt="">
-=======
             <a routerLink="/home" class="nome-ibank">IBANK</a>
             <a routerLink="/transferencia" class="transferencia">Transferência</a>
             <a routerLink="/extrato" class="extrato">Extrato</a>
         </nav>
         <div>
             <img src="../../assets/images/background-ibank.jpg" class="imagem-cabecalho" alt="">
->>>>>>> 25e1daa82611bce008947c01230b991a251354a4
         </div>
     </div>
 </section>
-
-<section class="extrato">
-    <div class="tela-extrato">
+<section class="login">
+    <div class="tela-login">
         <img src="../../assets/images/celular2.jpg" class="celular" alt="">
-        <div class="usuario-extrato">
-            <div class="extrato-ibank">
-                <h1 class="texto-usuario-extrato">EXTRATOS CONTA IBANK</h1>
-<<<<<<< HEAD
-                <p class="texto-usuario-extrato">Numero da Conta: </p>
-                <p class="texto-usuario-extrato">Valor Disponivel: </p>
-                <button type="ngsubmit" class="btn-logar">Voltar transferencia</button>
-            </div> 
-=======
-                <p class="texto-usuario-extrato">Número Conta Cliente: {{numeroConta}} </p>
-                <p class="texto-usuario-extrato">Saldo em conta: {{saldoConta}}</p>
-                <p class="texto-usuario-extrato">Descrição:{{descricao}} </p>
-                <p class="texto-usuario-extrato">Data: {{data}}</p>
-                <button (click)= "voltarTransferencia($event)" type="ngsubmit" class="btn-logar">Voltar transferencia</button>
-            </div> 
+        <div class="usuario-login">
+                <h1 class="texto-usuario-transferencia">TRANSFERÊNCIA CONTA IBANK</h1>
+                <p class="texto-usuario-transferencia">Número da Conta</p>
+                <input type="number" [value]="numeroConta" (keyup)="contaCliente($event)" required>
+                <hr>
+                <p class="texto-usuario-transferencia">Número da Conta Destinatário</p>
+                <input type="number" [value]="contaDestinatario" (keyup)="digitaContaDestinatario($event)" required>
+                <hr>
+                <p class="texto-usuario-transferencia">Valor a Transferir</p>
+                <input type="double" [value]="valorTransferido" (keyup)="digitaValorTransferir($event)" required>
+                <hr>
+                <p class="texto-usuario-transferencia">Revise os dados e confirme ao clicar botão</p>
+                <hr>
+                <button (click)="enviarTransferencia($event)" type="ngSubmit" class="btn-logar">Confirmar</button>
         </div>
     </div>
+
 </section>
 
 
@@ -49,7 +39,6 @@
         <img src="../../assets/images/tecnology2.jpg" class="imagem-dos" alt="">
         <div class="imagem-feliz">
             <img src="../../assets/images/people1.jpg" class="imagem-dos-feliz" alt="">
->>>>>>> 25e1daa82611bce008947c01230b991a251354a4
         </div>
     </div>
     

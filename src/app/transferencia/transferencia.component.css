@@ -2,7 +2,6 @@ body {
     margin: 0 auto;
 }
 
-
 .nav-ibank {
     display: flex;
     flex-direction: row;
@@ -13,7 +12,7 @@ body {
     background-color: blueviolet;
 }
 
-.nome-ibank, .transferencia, .extrato{
+.nome-ibank,.home, .login,.transferencia, .extrato{
     color: white;
     font-size: 20px;
     text-decoration: none;
@@ -22,16 +21,13 @@ body {
 
 .imagem-cabecalho {
     width: 1400px;
-<<<<<<< HEAD
-    height: 500px;
-=======
     height: 400px;
->>>>>>> 25e1daa82611bce008947c01230b991a251354a4
     margin: 0 auto;
     margin-bottom: 10px;
 }
 
-.tela-extrato{
+
+.tela-login{
     display: flex;
     flex-direction: row;
 }
@@ -44,23 +40,17 @@ margin-top: 30px;
 margin-bottom: 30px;
 }
 
-.extrato-ibank {
-    margin-top: 150px;
-
-}
-
-.usuario-extrato {
+.usuario-login {
     margin-top: 15px;
     margin-left: 80px;
 }
 
-.texto-usuario-extrato {
+.texto-usuario-transferencia {
     font-size: 18px;
     color: black;
 }
 
 .btn-logar{
-    margin-top: 10px;
     width: 200px;
     height: 40px;
     background-color: blueviolet;
@@ -68,9 +58,6 @@ margin-bottom: 30px;
     border-radius: 20px;
     margin-left: 30px;
 }
-
-<<<<<<< HEAD
-=======
 
 
 .container-imagems-dos{
@@ -123,5 +110,3 @@ margin-bottom: 30px;
     color: blueviolet;
     text-align: center;
 } 
-
->>>>>>> 25e1daa82611bce008947c01230b991a251354a4

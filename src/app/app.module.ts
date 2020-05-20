@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,6 +13,10 @@ import { ContainerImagemsComponent } from './container-imagems/container-imagems
 import { ContainerImagensDosComponent } from './container-imagens-dos/container-imagens-dos.component';
 import { ExtratoComponent } from './extrato/extrato.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+<<<<<<< HEAD
+=======
+import { TransferenciaComponent } from './transferencia/transferencia.component';
+>>>>>>> 25e1daa82611bce008947c01230b991a251354a4
 
 
 @NgModule({
@@ -23,11 +28,17 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     ContainerImagemsComponent,
     ContainerImagensDosComponent,
     ExtratoComponent,
+<<<<<<< HEAD
     PageNotFoundComponent
+=======
+    PageNotFoundComponent,
+    TransferenciaComponent
+>>>>>>> 25e1daa82611bce008947c01230b991a251354a4
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     HttpClientModule
   ],
   providers: [],

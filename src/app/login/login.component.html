@@ -1,11 +1,11 @@
 <section>
     <div class="cabecalho">
         <nav class="nav-ibank">
-            <a routerLink="home" class="nome-ibank">IBANK</a>
-            <a routerLink="login" class="login">Login</a>
+            <a routerLink="/home" class="nome-ibank">IBANK</a>
+            <a routerLink="/login" class="login">Login</a>
         </nav>
         <div>
-            <img src="../../assets/images/background5 (1).jpg" class="imagem-cabecalho" alt="">
+            <img src="../../assets/images/background-ibank.jpg" class="imagem-cabecalho" alt="">
         </div>
     </div>
 </section>
@@ -13,6 +13,7 @@
     <div class="tela-login">
         <img src="../../assets/images/celular2.jpg" class="celular" alt="">
         <div class="usuario-login">
+<<<<<<< HEAD
             <h1 class="texto-usuario-login">LOGIN CONTA IBANK</h1>
             <p class="texto-usuario-login">Número da Conta</p>
             <input type="text" [value]="numeroConta" (keyup)="digitouNumero($event)">
@@ -24,7 +25,51 @@
             <input type="password" [value]="senhaValor" (keyup)="digitouSenha($event)">
             <hr>
             <button (click)="enviarDados()" type="ngsubmit" class="btn-logar">Logar</button>
+=======
+            <form #form ="ngForm" (ngSubmit)="onSubmit(form)">
+                <h1 class="texto-usuario-login">LOGIN CONTA IBANK</h1>
+                <p class="texto-usuario-login">Número da Conta</p>
+                <input type="text" [value]="numeroConta" (keyup)="digitouNumero($event)" name="numeroConta" required ngModel>
+                <hr>
+                <p class="texto-usuario-login">Agencia</p>
+                <input type="text" [value]="numeroAgencia" (keyup)="digitouAgencia($event)" name="numeroAgencia"
+                  required  ngmodel>
+                <hr>
+                <p class="texto-usuario-login">Senha</p>
+                <input type="password" [value]="senhaValor" (keyup)="digitouSenha($event)" name="senhaValor" required ngModel>
+                <hr>
+                <button (click)="enviarDados($event)" type="submit" class="btn-logar">Logar</button>
+            </form>
+>>>>>>> 25e1daa82611bce008947c01230b991a251354a4
         </div>
     </div>
+
+</section>
+
+
+<div>
+    <div class="container-imagems-dos">
+        <img src="../../assets/images/money.jpg" class="imagem-dos" alt="">
+        <img src="../../assets/images/tecnology2.jpg" class="imagem-dos" alt="">
+        <div class="imagem-feliz">
+            <img src="../../assets/images/people1.jpg" class="imagem-dos-feliz" alt="">
+        </div>
+    </div>
+    
+</div>
+
+<section>
+
+    <div class="beneficios-tres">
+        <img src="../../assets/images/cashmachine.jpg" class="imagem-caixa-eletronico" alt="">
+        <p class="texto-beneficios-tres">Faça seus saques 24 por 7 sem taxas a ser cobradas na sua conta IBank</p>
+    </div>
+
+    <div class="beneficios-quatro">
+        <p class="texto-beneficios-quatro">Deposite a sua confiança em nosso serviço digital e tenha a tranquilidade de saber 
+            seu dinheiro está seguro e em boas mãos</p>
+        <img src="../../assets/images/meditation.jpg" class="imagem-meditation" alt="">
+    </div>
+
 
 </section>
