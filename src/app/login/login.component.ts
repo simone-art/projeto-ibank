@@ -20,10 +20,6 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  digitouNome($event){
-    this.valorNome = $event.target.value;
-    console.log($event.target.value);
-  }
 
   digitouNumero($event){
     this.numeroConta = $event.target.value;
@@ -49,12 +45,22 @@ export class LoginComponent implements OnInit {
     }).subscribe((dados: any) => {
       this.cliente = dados;
       localStorage.setItem('cliente', JSON.stringify(this.cliente));
-      this.router.navigate(['home']);
-      console.log(this.cliente);
+      try {
+        this.router.navigate(['home']);
+        console.log(this.cliente);
+      }
+      catch (error){
+        this.errormensagem();
+        console.log('Usuário não existe');
+      }
     });
   }
   redirect() {
     this.router.navigate(['home']);
-}
+  }
+
+  errormensagem(){
+    alert('Usuário não existe. Tente de novo e escreva seus dados corretamente');
+  }
 
 }
