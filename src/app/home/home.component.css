@@ -345,9 +345,11 @@ margin-bottom: 30px;
     }
 
     .imagem-caixa-eletronico, .imagem-meditation {
-    margin-top: 1000px;    
+    margin-top: 10px;    
     width: 300px;
     margin: 0 auto;
+    position: relative;
+    transform: translate(1px, 213px);
     
     }
 
@@ -356,6 +358,8 @@ margin-bottom: 30px;
         font-size: 20px;
         color: blueviolet;
         text-align: center;
+        position: relative;
+        transform: translate(10px, 216px);
     } 
 
     .texto-beneficios-quatro{
@@ -368,6 +372,8 @@ margin-bottom: 30px;
         color: blueviolet;
         text-align: center;
         display: unset;
+        position: relative;
+        transform: translateY(220px);
         
     }
 }

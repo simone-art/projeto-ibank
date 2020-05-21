@@ -5,7 +5,7 @@ body {
 .footer-ibank-nome{
     display: flex;
     flex-direction: row;
-    background-color: burlywood;
+
 }
 
 .ibank {
@@ -34,4 +34,39 @@ body {
     margin-top: 10px;
     margin-right: 20px;
     margin-bottom: 10px;
+}
+
+@media (max-width: 320px){
+
+    .footer-ibank-nome{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .redes-ibank{
+        position: relative;
+        transform: translateY(220px);
+    }
+    
+    .ibank {
+        color: white;
+        font-size: 15px;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-right: 70px;
+        
+    }
+
+    .texto-girls-power{
+        display: none;
+    }
+    .facebook-ibank, .instagram-ibank, .twitter-ibank,.soporte-ibank{
+        width: 20px;
+        height: 20px;
+        margin-top: 10px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+    
+
 }
