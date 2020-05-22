@@ -105,3 +105,118 @@ body {
     
 
 }
+
+
+@media (max-width: 425px){
+
+    .footer-ibank-nome{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .redes-ibank{
+        position: relative;
+        transform: translateY(220px);
+    }
+    
+    .ibank {
+        color: white;
+        font-size: 15px;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-right: 70px;
+        
+    }
+
+    .texto-girls-power{
+        display: none;
+    }
+    .facebook-ibank, .instagram-ibank, .twitter-ibank,.soporte-ibank{
+        width: 20px;
+        height: 20px;
+        margin-top: 10px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+    
+
+}
+
+@media (max-width: 768px){
+
+    .footer-ibank-nome{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .redes-ibank{
+        position: relative;
+        transform: translateY(20px);
+    }
+    
+    .ibank {
+        color: white;
+        font-size: 15px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-right: 530px;
+        
+    }
+
+    .texto-girls-power{
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: -420px;
+    }
+
+    .facebook-ibank, .instagram-ibank, .twitter-ibank,.soporte-ibank{
+        width: 20px;
+        height: 20px;
+        margin-top: 10px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+    
+
+}
+
+
+@media (max-width: 1024px){
+
+    .footer-ibank-nome{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .redes-ibank{
+        position: relative;
+        transform: translateY(20px);
+    }
+    
+    .ibank {
+        color: white;
+        font-size: 15px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-right: 670px;
+        
+    }
+
+    .texto-girls-power{
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: -530px;
+    }
+
+    .facebook-ibank, .instagram-ibank, .twitter-ibank,.soporte-ibank{
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+    
+
+}

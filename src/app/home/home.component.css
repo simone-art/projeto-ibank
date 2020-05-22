@@ -232,7 +232,7 @@ margin-bottom: 30px;
 
     .imagem-bemvindos{
     width: 200px;
-    height: 150px;
+    height: 300px;
     margin-top: 20px;
     margin: 0 auto;
     margin-bottom: 10px;
@@ -267,7 +267,6 @@ margin-bottom: 30px;
     height: 350px;
     margin-left: 30px;
     border-radius: 20px;
-    margin: 0 auto;
     
     }
 
@@ -298,7 +297,6 @@ margin-bottom: 30px;
     height: 350px;
     margin-left: 30px;
     border-radius: 20px;
-    margin: 0 auto;
     }
 
     .beneficios-ibank-dos {
@@ -333,7 +331,7 @@ margin-bottom: 30px;
         margin-top: 20px;
         margin-bottom: 10px;
         position: relative;
-        transform: translateY(208px);
+        transform: translate(2px, 208px);
         
     }
 
@@ -359,7 +357,7 @@ margin-bottom: 30px;
         color: blueviolet;
         text-align: center;
         position: relative;
-        transform: translate(10px, 216px);
+        transform: translate(2px, 216px);
     } 
 
     .texto-beneficios-quatro{
@@ -377,13 +375,14 @@ margin-bottom: 30px;
     }
 }
 
+
 @media (max-width: 375px){
 
     .nav-ibank {
         display: flex;
         flex-direction: column;
         justify-content:space-around;
-        width: 360px;
+        width: 365px;
         height: 50px;
         margin: 0 auto;
         background-color: blueviolet;
@@ -394,7 +393,9 @@ margin-bottom: 30px;
         font-size: 10px;
         text-decoration: none;
         margin-top: 10px;
+        margin-left: 40px;
     }
+    
 
     .home, .login{
         display: none;
@@ -402,157 +403,720 @@ margin-bottom: 30px;
 
     
     .imagem-cabecalho {
-        width: 360px;
+        width: 365px;
         height: 220px;
         margin: 0 auto;
         margin-bottom: 10px;
     }
-
+    
+    
     .container-bemvindos {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .imagem-bemvindos{
+    width: 200px;
+    height: 300px;
+    margin-top: 20px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    }
+
+    .bemvindos-ibank {
+    color: blueviolet;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    }
+
+    
+    .container-beneficios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    }
+
+    .textos-beneficios {
+    display: flex;
+    flex-direction: column;
+    margin: 10px, 10px, 10px, 10px;
+
+    }
+
+    .imagem-beneficios {
+    width: 300px;
+    height: 350px;
+    margin-left: 30px;
+    border-radius: 20px;
+    
+    }
+
+    .beneficios-ibank {
+    font-size: 16px;
+    margin-right: 15px;
+    color: blueviolet;
+    text-align: center;
+    margin-left: 30px;
+    }
+
+    
+    .container-beneficios-dos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    }
+
+    .textos-beneficios-dos{
+    display: flex;
+    flex-direction: column;
+    margin: 10px, 10px, 10px, 10px;
+    }
+
+    .imagem-beneficios-dos {
+    width: 300px;
+    height: 350px;
+    margin-left: 30px;
+    border-radius: 20px;
+    }
+
+    .beneficios-ibank-dos {
+    font-size: 16px;
+    margin-right: 15px;
+    color: blueviolet;
+    text-align: center;
+    margin-left: 30px;
+    }
+
+    .container-imagems-dos{
         display: flex;
         flex-direction: column;
+        
     }
     
-    .imagem-bemvindos{
-        width: 200px;
-        height: 250px;
+    .imagem-dos {
+        width: 280px;
+        height: 200px;
+        margin-bottom: 20px;
+        margin: 0 auto;
+    }
+
+    .imagem-feliz {
+        display: flex;
+        flex-direction: column;
+        height: 10px;
+    }
+    
+    .imagem-dos-feliz{
+        width: 300px;
+        height: 200px;
         margin-top: 20px;
+        margin-bottom: 10px;
+        position: relative;
+        transform: translate(32px, 208px);
+        
+    }
+
+    .beneficios-tres, .beneficios-quatro{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    
+    }
+
+    .imagem-caixa-eletronico, .imagem-meditation {
+    margin-top: 10px;    
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+    transform: translate(1px, 213px);
+    
+    }
+
+    .texto-beneficios-tres{
+        margin: 0 auto;
+        font-size: 18px;
+        color: blueviolet;
+        text-align: center;
+        position: relative;
+        transform: translate(2px, 216px);
+    } 
+
+    .texto-beneficios-quatro{
+        display: none;
+    }
+
+    .texto-beneficios-cinco{
+        margin: 0 auto;
+        font-size: 18px;
+        color: blueviolet;
+        text-align: center;
+        display: unset;
+        position: relative;
+        transform: translate(6px, 222px);
+    }
+}
+
+
+
+@media (max-width: 425px){
+
+    .nav-ibank {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        width: 365px;
+        height: 50px;
+        margin: 0 auto;
+        background-color: blueviolet;
+    }
+    
+    .nome-ibank {
+        color: white;
+        font-size: 10px;
+        text-decoration: none;
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+    
+
+    .home, .login{
+        display: none;
+    }
+
+    
+    .imagem-cabecalho {
+        width: 365px;
+        height: 220px;
         margin: 0 auto;
         margin-bottom: 10px;
     }
     
+    
+    .container-bemvindos {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .imagem-bemvindos{
+    width: 200px;
+    height: 300px;
+    margin-top: 20px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    }
+
     .bemvindos-ibank {
+    color: blueviolet;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    }
+
+    
+    .container-beneficios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    }
+
+    .textos-beneficios {
+    display: flex;
+    flex-direction: column;
+    margin: 10px, 10px, 10px, 10px;
+
+    }
+
+    .imagem-beneficios {
+    width: 300px;
+    height: 350px;
+    margin-left: 30px;
+    border-radius: 20px;
+    margin: 0 auto;
+    
+    }
+
+    .beneficios-ibank {
+    font-size: 16px;
+    margin-right: 15px;
+    color: blueviolet;
+    text-align: center;
+    margin-left: 30px;
+    }
+
+    
+    .container-beneficios-dos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    }
+
+    .textos-beneficios-dos{
+    display: flex;
+    flex-direction: column;
+    margin: 10px, 10px, 10px, 10px;
+    }
+
+    .imagem-beneficios-dos {
+    width: 300px;
+    height: 350px;
+    margin-left: 30px;
+    border-radius: 20px;
+    margin: 0 auto;
+    }
+
+    .beneficios-ibank-dos {
+    font-size: 16px;
+    margin-right: 15px;
+    color: blueviolet;
+    text-align: center;
+    margin-left: 30px;
+    }
+
+    .container-imagems-dos{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .imagem-dos {
+        width: 280px;
+        height: 200px;
+        margin-bottom: 20px;
+        margin: 0 auto;
+    }
+
+    .imagem-feliz {
+        display: flex;
+        flex-direction: column;
+        height: 10px;
+    }
+    
+    .imagem-dos-feliz{
+        width: 300px;
+        height: 200px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        position: relative;
+        transform: translate(54px, 208px);
+    }
+
+    .beneficios-tres, .beneficios-quatro{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    
+    }
+
+    .imagem-caixa-eletronico, .imagem-meditation {
+    margin-top: 10px;    
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+    transform: translate(1px, 213px);
+    
+    }
+
+    .texto-beneficios-tres{
+        margin: 0 auto;
+        font-size: 18px;
         color: blueviolet;
-        font-size: 20px;
+        text-align: center;
+        position: relative;
+        transform: translate(2px, 216px);
+    } 
+
+    .texto-beneficios-quatro{
+        display: none;
+    }
+
+    .texto-beneficios-cinco{
+        margin: 0 auto;
+        font-size: 18px;
+        color: blueviolet;
+        text-align: center;
+        display: unset;
+        position: relative;
+        transform: translate(6px, 222px);
+    }
+}
+
+    @media (max-width: 768px){
+
+        .nav-ibank {
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+            width: 760px;
+            height: 50px;
+            margin: 0 auto;
+            background-color: blueviolet;
+        }
+        
+        .nome-ibank, .home, .login {
+            color: white;
+            font-size: 10px;
+            text-decoration: none;
+            margin-top: 10px;
+            margin-left: 40px;
+        }
+          
+        .imagem-cabecalho {
+            width: 760px;
+            height: 220px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+        
+        .container-bemvindos {
+        display: flex;
+        flex-direction: row;
+        }
+
+        .imagem-bemvindos{
+        width: 200px;
+        height: 300px;
         margin-top: 20px;
         margin: 0 auto;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    
+        margin-bottom: 10px;
+        margin-left: 30px;
+        }
+
+        .bemvindos-ibank {
+            color: blueviolet;
+            font-size: 30px;
+            margin-top: 120px;
+            margin-left: 20px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
         
-    .container-beneficios {
+        .container-beneficios {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        margin-top: 10px;
-    }
+        margin-top: 20px;
+        }
     
-    .textos-beneficios {
+        .textos-beneficios {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         margin: 10px, 10px, 10px, 10px;
     
-    }
+        }
     
-    .imagem-beneficios {
-        width: 300px;
+        .imagem-beneficios {
+        width: 220px;
         height: 350px;
         margin-left: 30px;
         border-radius: 20px;
         margin: 0 auto;
         
-    }
+        }
     
-    .beneficios-ibank {
-        font-size: 20px;
+        .beneficios-ibank {
+        font-size: 18px;
+        margin-right: 15px;
         color: blueviolet;
         text-align: center;
-        margin-left: 30px;
-    }
+        margin-left: 20px;
+        }
     
-        
-    .container-beneficios-dos {
+        .container-beneficios-dos {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
+        margin-top: 20px;
+        margin-bottom: 30px;
+        }
     
-    .textos-beneficios-dos{
+        .textos-beneficios-dos{
         display: flex;
         flex-direction: column;
         margin: 10px, 10px, 10px, 10px;
-    }
+        }
     
-    .imagem-beneficios-dos {
-        width: 300px;
+        .imagem-beneficios-dos {
+        width: 220px;
         height: 350px;
         margin-left: 30px;
         border-radius: 20px;
         margin: 0 auto;
-    }
+        }
     
-    .beneficios-ibank-dos {
-        font-size: 20px;
+        .beneficios-ibank-dos {
+        font-size: 18px;
+        margin-right: 15px;
         color: blueviolet;
         text-align: center;
-        margin-left: 30px;
-    }
+        margin-left: 20px;
+        }
     
-    .container-imagems-dos{
+        .container-imagems-dos{
             display: flex;
             flex-direction: column;
-    }
+        }
         
-    .imagem-dos {
+        .imagem-dos {
             width: 280px;
             height: 200px;
             margin-bottom: 20px;
             margin: 0 auto;
-    }
+            margin-right: 20px;
+            margin-left: 60px;
+        }
     
-    .imagem-feliz {
+        .imagem-feliz {
             display: flex;
             flex-direction: column;
             height: 10px;
-    }
+        }
         
-    .imagem-dos-feliz{
-            width: 300px;
-            height: 200px;
+        .imagem-dos-feliz{
+            width: 350px;
+            height: 300px;
             margin-top: 20px;
             margin-bottom: 10px;
             position: relative;
-            transform: translateY(208px);
-    }
+            transform: translate(363px, -54px);
+        }
     
-    .beneficios-tres, .beneficios-quatro{
+        .beneficios-tres, .beneficios-quatro{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         margin-bottom: 10px;
         
-    }
+        }
     
-    .imagem-caixa-eletronico, .imagem-meditation {
+        .imagem-caixa-eletronico, .imagem-meditation {
         margin-top: 10px;    
         width: 300px;
         margin: 0 auto;
         position: relative;
-        transform: translate(1px, 213px);
-    }
+        margin-left: 60px;
+        transform: translate(-10px, 20px);
+        
+        }
     
-    .texto-beneficios-tres{
+        .texto-beneficios-tres{
             margin: 0 auto;
             font-size: 20px;
             color: blueviolet;
             text-align: center;
             position: relative;
-            transform: translate(10px, 216px);
-    } 
+            margin-left: 60px;
+            transform: translate(-20px, 110px);
+        } 
     
-    .texto-beneficios-quatro{
-            display: none;
-    }
-    
-    .texto-beneficios-cinco{
+        .texto-beneficios-quatro{
             margin: 0 auto;
             font-size: 20px;
             color: blueviolet;
             text-align: center;
             display: unset;
             position: relative;
-            transform: translateY(220px);  
-    }
+            transform: translate(6px, 130px);
+        }
+    
+        .texto-beneficios-cinco{
+            display: none;
+        }    
+    
+
 }
+
+
+@media (max-width: 1024px){
+
+    .nav-ibank {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        width: 1000px;
+        height: 50px;
+        margin: 0 auto;
+        background-color: blueviolet;
+    }
+    
+    .nome-ibank, .home, .login {
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+      
+    .imagem-cabecalho {
+        width: 1000px;
+        height: 400px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    
+    .container-bemvindos {
+    display: flex;
+    flex-direction: row;
+    }
+
+    .imagem-bemvindos{
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    }
+
+    .bemvindos-ibank {
+        color: blueviolet;
+        font-size: 40px;
+        margin-top: 120px;
+        margin-left: 20px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .container-beneficios {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    }
+
+    .textos-beneficios {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px, 10px, 10px, 10px;
+
+    }
+
+    .imagem-beneficios {
+    width: 320px;
+    height: 350px;
+    margin-left: 30px;
+    border-radius: 20px;
+    margin: 0 auto;
+    
+    }
+
+    .beneficios-ibank {
+    font-size: 30px;
+    margin-right: 15px;
+    color: blueviolet;
+    text-align: center;
+    margin-left: 20px;
+    }
+
+    .container-beneficios-dos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    }
+
+    .textos-beneficios-dos{
+    display: flex;
+    flex-direction: column;
+    margin: 10px, 10px, 10px, 10px;
+    }
+
+    .imagem-beneficios-dos {
+    width: 320px;
+    height: 350px;
+    margin-left: 30px;
+    border-radius: 20px;
+    margin: 0 auto;
+    }
+
+    .beneficios-ibank-dos {
+    font-size: 30px;
+    margin-right: 15px;
+    color: blueviolet;
+    text-align: center;
+    margin-left: 20px;
+    }
+
+    .container-imagems-dos{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .imagem-dos {
+        width: 400px;
+        height: 400px;
+        margin: 0 auto;
+        margin-right: 20px;
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+
+    .imagem-feliz {
+        display: flex;
+        flex-direction: column;
+        height: 10px;
+    }
+    
+    .imagem-dos-feliz{
+        width: 550px;
+        height: 1000px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        position: relative;
+        transform: translate(450px, -206px);
+    }
+
+    .beneficios-tres, .beneficios-quatro{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    
+    }
+
+    .imagem-caixa-eletronico, .imagem-meditation {
+    margin-top: 10px;    
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    margin-left: 40px;
+    transform: translate(-10px, 20px);
+    
+    }
+
+    .texto-beneficios-tres{
+        margin: 0 auto;
+        font-size: 30px;
+        color: blueviolet;
+        text-align: center;
+        position: relative;
+        margin-left: 60px;
+        transform: translate(-20px, 110px);
+    } 
+
+    .texto-beneficios-quatro{
+        margin: 0 auto;
+        font-size: 30px;
+        color: blueviolet;
+        text-align: center;
+        display: unset;
+        position: relative;
+        transform: translate(6px, 130px);
+    }
+
+    .texto-beneficios-cinco{
+        display: none;
+    }    
+
+
+}
+
